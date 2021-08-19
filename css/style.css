@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:980px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+::placeholder {
+  color:#D3CFCB;
+}
+#home{
+	background-image: url(../images/bg.png);
+	padding: 40px 0;
+	background-size: cover;
+}
+header{
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 40px;
+}
+header div.left{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header div.left h1{
+	width: 100px;
+	margin-right: 35px;
+}
+header div.left h1 a{
+	display: block;
+	
+}
+header div.left h1 a img{
+	width: 100%;
+}
+header div.left nav{
+
+}
+header div.left nav ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header div.left nav ul li{
+	margin-left: 30px;
+}
+header div.left nav ul li a{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+header div.left nav ul li a img{
+	margin-right: 15px;
+}
+header div.right{
+	
+}
+header div.right ul{
+	display: flex;
+	justify-content: space-between;
+}
+header div.right li{
+	margin-right: 30px;
+}
+header div.right li a{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+}
+header div.right li a.button{
+	background: #2dca73;
+	padding: 16px 24px;
+	border-radius: 8px;
+}
+#spotlight{
+	padding-top: 115px;
+}
+#spotlight section.wrapper{
+
+}
+#spotlight section.wrapper div.container{
+	width: 60%;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+#spotlight section.wrapper div.container h2{
+	font-size: 54px;
+	margin-bottom: 20px;
+	
+}
+#spotlight section.wrapper div.container p{
+	font-size: 21px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+#spotlight section.wrapper div.container form{
+	display: flex;
+	justify-content: space-between;
+	background: #ffffff;
+	padding: 18px 48px;
+	border-radius: 8px;
+}
+#spotlight section.wrapper div.container form input{
+	width: 80%;
+	padding-left: 15px;
+	padding-right: 45px;
+	height: 50px;
+	font-size: 16px;
+	display: block;
+	background-color: #ffffff;
+	border-radius: 8px;
+	border: 1px solid #2dca73;
+	outline: 0;
+	color: #dfdfdf;
+}
+#spotlight section.wrapper div.container form button{
+	background: #2dca73;
+	padding: 16px 24px;
+	border-radius: 8px;
+	margin-left: 10px;
+}
+@media all and (max-width: 980px){
+	header div.left nav{
+		display: none;
+	}
+	#spotlight section.wrapper div.container h2 {
+		font-size: 40px;
+		margin-bottom: 16px;
+	}
+}
+@media all and (max-width: 768px){
+	#spotlight {
+		padding-top: 52px;
+	}
+	#spotlight section.wrapper div.container form{
+		padding: 16px 32px;
+	}
+}
+@media all and (max-width: 640px){
+	#spotlight section.wrapper div.container h2 {
+		font-size: 32px;
+	}
+	#spotlight section.wrapper div.container form {
+		padding: 13px 10px 13px 12px;
+	}
+	#spotlight section.wrapper div.container form input{
+		font-size: 14px;
+	}
+	#spotlight section.wrapper div.container form button{
+		margin-top: 10px;
+		margin-left: 65px;
+}
+@media all and (max-width: 480px){
+	header div.right ul{
+		display: none;
+	}
+	header div.left h1 a img{
+		margin-left: 86px;
+	}
+	#spotlight {
+		padding-top: 36px;
+	}
+	#spotlight section.wrapper div.container h2 {
+		font-size: 24px;
+	}
+	#spotlight section.wrapper div.container p {
+		font-size: 16px;
+	}
+	#spotlight section.wrapper div.container form{
+		flex-wrap: wrap;
+	}
+	#spotlight section.wrapper div.container form {
+		width: 124%;
+		background: none;
+	}
+	#spotlight section.wrapper div.container form button{
+		margin-top: 10px;
+		margin-left: 42px;
+	}
+}
+@media all and (max-width: 360px){
+	#spotlight section.wrapper div.container {
+		width: 100%;
+	}
+	#spotlight section.wrapper div.container form button {
+		margin-top: 10px;
+		margin-left: 88px;
+	}
+}
